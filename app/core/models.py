@@ -6,7 +6,7 @@ from django.conf import settings
 
 class UserManager(BaseUserManager):
 
-    def create_user(self, email, password=None,  **extra_fields):
+    def create_user(self, email, password=None, **extra_fields):
         """Creates and saves a new user"""
         if not email:
             raise ValueError('Users must have an email address')
